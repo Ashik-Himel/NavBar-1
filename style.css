@@ -12,13 +12,13 @@
     box-sizing: border-box;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    color: var(--text-color);
 }
 a {
     text-decoration: none;
@@ -27,7 +27,6 @@ a {
 ul {
     list-style: none;
 }
-
 
 .container {
     width: 100%;
@@ -38,13 +37,12 @@ ul {
     color: var(--primary-color);
 }
 
-
-.navigation-area {
+.navigation-section {
     padding: 0.8rem;
     background-color: var(--dark-color);
     position: relative;
 }
-.navigation-area .container {
+.navigation-section .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,17 +64,28 @@ ul {
     left: 0;
     right: 0;
     height: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     overflow: hidden;
     transition: height 0.3s ease;
 }
 .show-nav {
-    height: 75vh;
+    height: 350px;
 }
 .navigation__link {
     color: var(--light-color);
-    font-size: 1.2rem;
 }
-
+.nav-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.nav-btn:hover {
+    background-color: var(--secondary-color);
+}
 
 .hamburger {
     display: flex;
@@ -84,7 +93,6 @@ ul {
     justify-content: center;
     align-items: flex-end;
     gap: 5px;
-    cursor: pointer;
 }
 .hamburger span {
     display: block;
@@ -121,8 +129,6 @@ ul {
 }
 
 
-
-
 @media (min-width: 576px) {
     .container {
         width: 540px;
@@ -144,20 +150,6 @@ ul {
         height: initial;
         position: static;
         flex-direction: row;
-    }
-    .navigation__link {
-        font-size: initial;
-    }
-    .nav-btn {
-        display: inline-block;
-        background-color: var(--primary-color);
-        color: var(--light-color);
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-    .nav-btn:hover {
-        background-color: var(--secondary-color);
     }
 }
 @media (min-width: 1200px) {

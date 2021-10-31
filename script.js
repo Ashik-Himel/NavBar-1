@@ -1,5 +1,5 @@
-const hamburger = document.getElementById('hamburger');
-const navigation = document.getElementById('navigation');
+const hamburger = document.querySelector('.hamburger');
+const navigation = document.querySelector('.navigation');
 const navLink = document.querySelectorAll('.navigation__link')
 
 hamburger.onclick = function() {
@@ -8,7 +8,6 @@ hamburger.onclick = function() {
 }
 
 navLink.forEach(n => n.addEventListener('click', linkAction));
-
 function linkAction(){
     navigation.classList.remove('show-nav');
     hamburger.classList.remove('cross-hamburger');
