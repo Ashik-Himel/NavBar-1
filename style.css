@@ -27,12 +27,27 @@ a {
 ul {
     list-style: none;
 }
+img {
+    max-width: 100%;
+}
 
 .container {
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
 }
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
 .text-primary {
     color: var(--primary-color);
 }
@@ -76,16 +91,8 @@ ul {
 .navigation__link {
     color: var(--light-color);
 }
-.nav-btn {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--light-color);
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-.nav-btn:hover {
-    background-color: var(--secondary-color);
+.nav-active {
+    color: var(--primary-color);
 }
 
 .hamburger {
