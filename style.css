@@ -57,7 +57,7 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     background-color: var(--dark-color);
     position: absolute;
     top: 100%;
@@ -150,6 +150,7 @@ ul {
         height: initial;
         position: static;
         flex-direction: row;
+        gap: 15px;
     }
 }
 @media (min-width: 1200px) {
