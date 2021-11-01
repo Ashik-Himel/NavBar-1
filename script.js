@@ -1,7 +1,7 @@
 const hamburger = document.querySelector('.hamburger');
 const navigation = document.querySelector('.navigation');
 const navLink = document.querySelectorAll('.navigation__link');
-const navSection = document.querySelector('.navigation-section')
+const navSection = document.querySelector('.navigation-section');
 
 function navAndCrossClose() {
     navigation.classList.remove('show-nav');
